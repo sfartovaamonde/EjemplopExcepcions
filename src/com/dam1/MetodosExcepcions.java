@@ -71,4 +71,20 @@ public void divisionConBloqueFinally(){
 
 }
 
+
+public void divisionLanzarExcepcion () throws ArithmeticException {
+    int numerador, denominador, resultado;
+
+    numerador = Integer.parseInt(JOptionPane.showInputDialog(" numerador "));
+    denominador = Integer.parseInt(JOptionPane.showInputDialog(" denominador "));
+
+    if ( denominador ==0)
+        throw new ArithmeticException("ollo, non podes dividir entre cero");
+    else
+    resultado = numerador
+            / denominador;
+
+    JOptionPane.showMessageDialog(null, " division = " + resultado);
+}
+
 }
